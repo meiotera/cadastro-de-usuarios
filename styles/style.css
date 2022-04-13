@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    max-width: 1440px;    
+}
+.titulo{
+    text-align: center;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cadastrar form label, .entrar form label{
+    display: block;
+    margin-top: 20px;
+}
+.btn {
+    margin-top: 20px;
+}
