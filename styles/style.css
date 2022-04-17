@@ -4,27 +4,59 @@
 }
 body{
     margin: 0 auto;
-    max-width: 1440px;    
+    max-width: 1440px; 
+    background-color: rgba(224, 245, 220, 0.192);   
 }
 .titulo{
+    margin-top: 50px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .principal{
-    display: flex;
-    justify-content: center;
+    display: flex;    
+    justify-content: center;    
     gap: 20px;
+    height: 40vh;
 }
 
 .cadastrar form label, .entrar form label{
     display: block;
-    margin-top: 20px;
+    margin-top: 20px;    
+    
 }
-.btn {
-    margin-top: 20px;
+.btn {   
+    text-align: center;
+    height: 80px;
+    background-color: rgba(4, 180, 78, 0.459);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn #btCadastrar{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(7, 146, 65);
+    color: aliceblue;
+    font-weight: bolder;
+}
+.btn #btCadastrar:hover{
+    background-color: rgba(7, 146, 65, 0.548);
 }
 .error{
     display: block;
 }
+.cadastrar{
+    border: 1px solid black;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 8px 10px 10px rgb(122, 122, 122);
+    margin-top: 20px;
+}   
+.formUm {
+    padding: 20px;
+} 
 
 #erroNome, #erroSenha, #erroConfirmPass {
     font-size: 9px;
