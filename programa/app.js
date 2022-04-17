@@ -1,26 +1,47 @@
 function cadastrar(){
     let inNome = document.getElementById('inNome');
     let inPass = document.getElementById('inPass');
-    let inConfirmePass = document.getElementById('inConfirmePass').value;
+    let inConfirmePass = document.getElementById('inConfirmePass');
 
     let nome = inNome.value;
-    let password = inPass.value;
+    let pass = inPass.value;
+    let confirmePass = inConfirmePass.value;
 
-    verifyError(nome, password)
-   
+    validarDados(nome, pass, confirmePass);
+
 }
 let btCadastrar = document.getElementById('btCadastrar');
 btCadastrar.addEventListener('click', cadastrar);
 
+function validarDados(nome, password, confirmePass){
 
-// Mensagem de erro abaixo do label
-function verifyError(nome,senha){
+    let erroNome = document.getElementById('erroNome');
+    let erroSenha = document.getElementById('erroSenha');
+    let erroConfirmPass = document.getElementById('erroConfirmPass');
+
+    // reset mensagem de erro
+    erroNome.textContent = '';
+    erroSenha.textContent = '';
+    erroConfirmPass.textContent = '';
+
+
     if (nome === ''){
-        const paragrafoErro = document.createElement(`p`);
-        const textErro = document.createTextNode(`Digite a informacao solicitada`);
-        let divAlert = document.getElementById('alert').appendChild(textErro);
-  
-       
+        erroNome.textContent = `Favor informar um nome de usuário`;
+    }    
+    if (password === ''){
+        erroSenha.textContent = `Favor verificar digitação`;
     }
+    if (confirmePass !== password || confirmePass === ''){
+        erroConfirmPass.textContent = 'Senhas não coincidem';
+    } 
 
+    verificarUsuario(nome)
+
+}
+
+
+function verificarUsuario(usuario){
+    let existe = false;
+
+    
 }

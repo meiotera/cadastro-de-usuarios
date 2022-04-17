@@ -16,20 +16,21 @@
     <main class="principal">
 
         <div class="cadastrar">
-            <form action="">
+            <form action="" class="formUm">
                 <label for="nome">
-                    <input type="text" id="inNome" placeholder="Informa seu nome">
-                    <div id="alert"></div>
+                    <input type="text" id="inNome" placeholder="Informa seu nome" data-rules="required">
+                    <div id="erroNome"></div>
                    
                 </label>
                 
                 <label for="pass">
                     <input type="password" id="inPass" placeholder="Informe sua senha">
-                    
+                    <div id="erroSenha"></div>
                 </label>
+
                 <label for="confirmePass">
                     <input type="password" id="inConfirmePass" placeholder="Confirme sua senha">
-                    
+                    <div id="erroConfirmPass"></div>
                 </label>
     
                 <div class="btn">

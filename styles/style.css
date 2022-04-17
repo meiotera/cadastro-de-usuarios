@@ -22,3 +22,13 @@ body{
 .btn {
     margin-top: 20px;
 }
+.error{
+    display: block;
+}
+
+#erroNome, #erroSenha, #erroConfirmPass {
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0000;
+    position: absolute;
+}
