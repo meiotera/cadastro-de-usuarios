@@ -22,11 +22,19 @@ body{
 .cadastrar form label, .entrar form label{
     display: block;
     margin-top: 20px;    
+
+}
+label {
+    position: relative;
+}
+input{
+    padding: 10px;
+    width: 80%;
     
 }
 .btn {   
     text-align: center;
-    height: 80px;
+    height: 150px;
     background-color: rgba(4, 180, 78, 0.459);
     display: flex;
     justify-content: center;
@@ -39,6 +47,7 @@ body{
     background-color: rgb(7, 146, 65);
     color: aliceblue;
     font-weight: bolder;
+    max-width: 120px;
 }
 .btn #btCadastrar:hover{
     background-color: rgba(7, 146, 65, 0.548);
@@ -53,14 +62,18 @@ body{
     justify-content: space-between;
     box-shadow: 8px 10px 10px rgb(122, 122, 122);
     margin-top: 20px;
+    width: 400px;
+    
 }   
 .formUm {
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
 } 
 
 #erroNome, #erroSenha, #erroConfirmPass {
-    font-size: 9px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ff0000;
     position: absolute;
+    left: 30px;
 }
